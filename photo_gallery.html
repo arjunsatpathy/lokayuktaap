@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Arunachal Pradesh Lokayukta</title>
+    <meta name="description" content="Photo gallery of Arunachal Pradesh Lokayukta events, awareness programs, and ceremonies.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://lokayukta.arunachal.gov.in/images/favicon.ico" type="image/x-icon">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="spacer"></div>
+
+    <div class="page-header">
+        <h1>Photo Gallery</h1>
+        <p>Events, Awareness Programs & Ceremonies</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--clr-primary);" class="fade-in">Public Outreach</h2>
+        <div class="gallery-grid fade-in stagger" style="margin-bottom: 4rem;">
+
+            <div class="gallery-item fade-in" data-caption="Awareness Programme at Roing">
+                <img src="images/gallery/AC-1.png" alt="Awareness Programme at Roing">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Awareness Campaign at Pasighat">
+                <img src="images/gallery/AC-2.png" alt="Awareness Campaign at Pasighat">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Awareness programme at Pasighat with Gaon Burah & Gaon Buris">
+                <img src="images/gallery/AC-3.png" alt="Awareness programme at Pasighat">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Awareness programme in collaboration with NGO AAMYA at Roing">
+                <img src="images/gallery/AC-4.png" alt="Awareness programme with NGO AAMYA">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Awareness Campaign at Siluk">
+                <img src="images/gallery/AC-5.png" alt="Awareness Campaign at Siluk">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Lokayukta visited cleanest village Siluk in Roing District">
+                <img src="images/gallery/AC-6.png" alt="Visit to Siluk Village">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Legal literacy programme for Gaon Burahs and Gaon Buris of Papumpare district, Dec 2021">
+                <img src="images/gallery/AC-7.png" alt="Legal literacy programme">
+            </div>
+
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--clr-primary);" class="fade-in">Swearing in of Lokayukta</h2>
+        <div class="gallery-grid fade-in stagger">
+
+            <div class="gallery-item fade-in" data-caption="Chairman">
+                <img src="images/slider/chairman.jpg" alt="Chairman">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Lokayukta Swearing in">
+                <img src="images/slider/Lokayukta Swearing in.jpg" alt="Lokayukta Swearing in">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Justice (retd) Prasanta Kumar Saikia and Shri Yeshi Tsering takes oath at Raj Bhawan, 27th June, 2019">
+                <img src="images/gallery/7.jpg" alt="Oath taking ceremony">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Justice (Retd.) Prasanta Kumar Saikia greeted by Hon'ble CM Pema Khandu">
+                <img src="images/gallery/6.jpg" alt="Chairperson greeted by CM">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Chairperson in conversation with Ex-Chief Secretary Satya Gopal and Ex-DGP SBK Singh">
+                <img src="images/gallery/5.jpg" alt="Chairperson with officials">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Photo Session with Chairperson, Member and Hon'ble CM Pema Khandu">
+                <img src="images/gallery/4.jpg" alt="Photo session with CM">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Hon'ble CM Pema Khandu greets Yeshi Tsering at oath ceremony, 27th June, 2019">
+                <img src="images/gallery/3.jpg" alt="CM greets Member">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Hon'ble CM Pema Khandu and Governor BD Mishra at the oath-taking ceremony, 27th June, 2019">
+                <img src="images/gallery/2.jpg" alt="CM and Governor at ceremony">
+            </div>
+
+            <div class="gallery-item fade-in" data-caption="Justice (retd) Prasanta Kumar Saikia takes oath as Lokayukta at Raj Bhawan, 27th June, 2019">
+                <img src="images/gallery/1.jpg" alt="Oath taking">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox"><img src="icons/Cancel.svg" alt="" aria-hidden="true"></button>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption" style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); color: white; background: rgba(0,0,0,0.6); padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-size: 0.9rem; max-width: 80%; text-align: center;"></div>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+</html>

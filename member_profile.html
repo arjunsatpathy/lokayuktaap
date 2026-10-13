@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Profile | Arunachal Pradesh Lokayukta</title>
+    <meta name="description" content="Profile of Member Er. Sang Phuntsok, IAS (Retd), Arunachal Pradesh Lokayukta.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://lokayukta.arunachal.gov.in/images/favicon.ico" type="image/x-icon">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+        .profile-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 4px solid var(--clr-primary);
+            box-shadow: var(--shadow-sm);
+            display: block;
+        }
+        .profile-name {
+            color: var(--text-dark);
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+        .profile-role {
+            color: var(--clr-primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .profile-bio {
+            text-align: justify;
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            padding: 0 20px;
+        }
+        @media (max-width: 768px) {
+            .profile-card {
+                padding: 20px;
+            }
+            .profile-bio {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="spacer"></div>
+
+    <div class="page-header">
+        <h1>Member Profile</h1>
+        <p>Member of Arunachal Pradesh Lokayukta</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Leadership</span> <span>/</span> <span>Member</span>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="profile-card fade-in">
+            <img src="images/slider/member.png" alt="Er. Sang Phuntsok, IAS (Retd)" class="profile-photo" onerror="this.style.background='linear-gradient(135deg, var(--clr-primary), var(--clr-primary-light))'; this.src=''">
+            <h2 class="profile-name">Er. Sang Phuntsok, IAS (Retd)</h2>
+            <div class="profile-role">Member, Arunachal Pradesh Lokayukta</div>
+            <div class="profile-bio">
+                Sang Phuntsok, IAS (Retd) Member Lokayukta was born on 1st August, 1962. Educational qualification: Passed (B.Tech) Civil Engineering in first class with distinction from College of Engineering Trivandrum, University of Kerala in 1987. In 2012 passed Bachelor of Law (LLB) in first position and awarded Gold Medal by the Rajiv Gandhi University Doimukh, Arunachal Pradesh. Joined as Assistant Engineer in PWD, Govt. of Arunachal Pradesh in 1987. Thereafter, worked as Assistant Engineer, as Executive Engineer, as Superintending Engineer and as Chief Engineer in the department of Hydropower Development Govt. of Arunachal Pradesh till 2016. In 2015 inducted into IAS as a Non SCS candidate with ante date seniority from 2010. After induction into IAS worked as Special Secretary (Power) under Govt. of Arunachal Pradesh. Thereafter, posted as Deputy Commissioner in Tawang w.e.f 22.07.2015 to December, 2021. Then posted as Secretary (Hydro Power) under the Govt. of Arunachal Pradesh till retirement i.e. on 31.07.2022. Appointed as Member of Lokayukta on 5th August, 2025 and after assumed the office on 20th August, 2025 as Member in Lokayukta Govt. of Arunachal Pradesh.
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+</html>

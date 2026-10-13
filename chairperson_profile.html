@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairperson Profile | Arunachal Pradesh Lokayukta</title>
+    <meta name="description" content="Profile of Chairperson Justice Prasanta Kumar Deka (Retd), Arunachal Pradesh Lokayukta.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://lokayukta.arunachal.gov.in/images/favicon.ico" type="image/x-icon">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+        .profile-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 4px solid var(--clr-primary);
+            box-shadow: var(--shadow-sm);
+            display: block;
+        }
+        .profile-name {
+            color: var(--text-dark);
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+        .profile-role {
+            color: var(--clr-primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .profile-bio {
+            text-align: justify;
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            padding: 0 20px;
+        }
+        @media (max-width: 768px) {
+            .profile-card {
+                padding: 20px;
+            }
+            .profile-bio {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="spacer"></div>
+
+    <div class="page-header">
+        <h1>Chairperson Profile</h1>
+        <p>Hon'ble Chairperson of Arunachal Pradesh Lokayukta</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Leadership</span> <span>/</span> <span>Chairperson</span>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="profile-card fade-in">
+            <img src="images/slider/chairperson.jpg" alt="Justice Prasanta Kumar Deka (Retd)" class="profile-photo" onerror="this.style.background='linear-gradient(135deg, var(--clr-primary), var(--clr-primary-light))'; this.src=''">
+            <h2 class="profile-name">Justice Prasanta Kumar Deka (Retd)</h2>
+            <div class="profile-role">Chairperson, Arunachal Pradesh Lokayukta</div>
+            <div class="profile-bio">
+                <p style="margin-bottom: 1em;">Justice Prasanta Kumar Deka (Retd), born on 5 November 1959, completed his B.E. in Electrical Engineering from Assam Engineering College under Gauhati University and later obtained his LL.B. degree from Government Law College, Guwahati.</p>
+                <p style="margin-bottom: 1em;">He briefly served with M/s Hindustan Fertilizer Corporation, Namrup, and OIL Pipeline Headquarters, Narengi, before joining the Assam State Electricity Board (ASEB) in November 1984 as an Assistant Engineer at the 132 EHV Grid Sub-Station, Kahilipara. He took voluntary retirement from ASEB in November 1995 while serving as an Assistant Executive Engineer.</p>
+                <p style="margin-bottom: 1em;">He was enrolled as an Advocate on 19 January 1996 with the Bar Council of Assam, Nagaland, Meghalaya, Manipur, Tripura, Mizoram and Arunachal Pradesh. Thereafter, he concentrated on civil practice before the subordinate courts and the Gauhati High Court.</p>
+                <p style="margin-bottom: 1em;">He was sworn in as an Additional Judge of the Gauhati High Court on 15 November 2016 and was appointed a permanent Judge with effect from 12 November 2018. Upon attaining the age of superannuation, he retired from the High Court on 5 November 2021.</p>
+                <p>Subsequently, he served as President of the Assam State Consumer Disputes Redressal Commission from 8 November 2021 to 18 August 2025. He has been serving as the Chairperson of the Lokayukta, Arunachal Pradesh, with effect from 20 August 2025.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+</html>
