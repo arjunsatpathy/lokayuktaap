@@ -32,20 +32,20 @@ window.FooterComponent = function() {
         </div>
     </section>
     <div class="footer-bottom" role="contentinfo">
-        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1140px; margin: 0 auto; flex-wrap: wrap; gap: 0.75rem;">
-            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-                <nav aria-label="Footer Navigation" style="display: flex; gap: 1rem; font-size: 0.9rem;">
-                    <a href="index.html" style="color: #ffffff; text-decoration: none;">Home</a>
-                    <span style="color: rgba(255,255,255,0.5);" aria-hidden="true">|</span>
-                    <a href="sitemap.html" style="color: #ffffff; text-decoration: none;">Sitemap</a>
-                    <span style="color: rgba(255,255,255,0.5);" aria-hidden="true">|</span>
-                    <a href="disclaimer.html" style="color: #ffffff; text-decoration: none;">Disclaimer</a>
+        <div class="footer-bottom-inner">
+            <div class="footer-bottom-left">
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="index.html">Home</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="sitemap.html">Sitemap</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="disclaimer.html">Disclaimer</a>
                 </nav>
-                <span style="color: rgba(255,255,255,0.4);" aria-hidden="true">|</span>
-                <p style="margin: 0; color: #ffffff;">© ${new Date().getFullYear()} Arunachal Pradesh Lokayukta</p>
+                <span class="footer-divider" aria-hidden="true">|</span>
+                <p>© ${new Date().getFullYear()} Arunachal Pradesh Lokayukta</p>
             </div>
-            <a href="https://www.nic.in" target="_blank" rel="noopener noreferrer" aria-label="National Informatics Centre website (opens in new tab)" style="display: inline-flex; align-items: center; transition: opacity 0.3s ease; opacity: 0.9;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
-                <img src="images/Nic_logo3-01.png" alt="National Informatics Centre Logo" style="height: 30px; width: auto; display: block;">
+            <a href="https://www.nic.in" target="_blank" rel="noopener noreferrer" aria-label="National Informatics Centre website (opens in new tab)" class="footer-logo-link">
+                <img src="images/Nic_logo3-01.png" alt="National Informatics Centre Logo">
             </a>
         </div>
     </div>

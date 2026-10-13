@@ -56,11 +56,12 @@ function initNavbar() {
     const navLinks = document.querySelector('.nav-links');
 
     // Scroll effect
+    const siteHeader = document.querySelector('.site-header');
     if (navbar) {
         window.addEventListener('scroll', () => {
             const isScrolled = window.scrollY > 20;
             navbar.classList.toggle('scrolled', isScrolled);
-            if (topBar) topBar.classList.toggle('scrolled', isScrolled);
+            if (siteHeader) siteHeader.classList.toggle('scrolled', isScrolled);
         }, { passive: true });
     }
 
@@ -440,15 +441,17 @@ function initAccessibility() {
     let baseFontSize = 100; // percent
 
     document.addEventListener('click', (e) => {
-        if (e.target.id === 'btn-increase-text') {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+        if (btn.id === 'btn-increase-text') {
             if (baseFontSize < 120) baseFontSize += 10;
             html.style.fontSize = `${baseFontSize}%`;
             announce(`Text size increased to ${baseFontSize}%`);
-        } else if (e.target.id === 'btn-decrease-text') {
+        } else if (btn.id === 'btn-decrease-text') {
             if (baseFontSize > 80) baseFontSize -= 10;
             html.style.fontSize = `${baseFontSize}%`;
             announce(`Text size decreased to ${baseFontSize}%`);
-        } else if (e.target.id === 'btn-normal-text') {
+        } else if (btn.id === 'btn-normal-text') {
             baseFontSize = 100;
             html.style.fontSize = `${baseFontSize}%`;
             announce('Text size reset to normal');
